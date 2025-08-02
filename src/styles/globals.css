@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-inter: "Inter";
+  --color-primary-color: #6366f1;
+  --color-accent-color: #3f83f8;
+  --color-text-color: #333333;
+  --color-link-color: #2563eb;
+  --color-background-color: #ffffff;
+  --color-light-gray: #f0f0f0;
+  --color-gray: #808080;
+  --color-dark-gray: #555555;
+  --color-button: #5254f8;
+  --color-nav-link: #718096;
+  --color-overlay: rgba(0, 0, 0, 0.3);
+  --color-dark-green-s: rgb(44, 187, 93);
+  --color-dark-yellow: rgb(255, 192, 30);
+  --color-dark-pink: rgb(255, 55, 95);
+  --color-olive: rgb(0, 184, 163);
+  --color-button-selection: #d0d1fb;
+}
+
+.button-shadow:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+/* CODE EDITOR*/
+.cm-scroller,
+.cm-gutters {
+  background-color: #ffffff !important;
+}
+.cm-focused {
+  outline: none !important;
+}
+
+.split {
+  display: flex;
+  flex-direction: row;
+}
+
+.gutter {
+  background-color: #f0f0f0;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.gutter.gutter-horizontal {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAeCAYAAADkftS9AAAAIklEQVQoU2M4c+bMfxAGAgYYmwGrIIiDjrELjpo5aiZeMwF+yNnOs5KSvgAAAABJRU5ErkJggg==");
+  cursor: col-resize;
+}
+
+.gutter.gutter-vertical {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAFAQMAAABo7865AAAABlBMVEVHcEzMzMzyAv2sAAAAAXRSTlMAQObYZgAAABBJREFUeF5jOAMEEAIEEFwAn3kMwcB6I2AAAAAASUVORK5CYII=");
+  cursor: row-resize;
+}
+
+.gutter:hover {
+  background-color: #6365f1;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #555555;
+}
+
+code {
+  border-radius: 5px;
+  border-width: 1px;
+  font-family: sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1rem;
+  padding: 0.125rem;
+  letter-spacing: 1px;
+  white-space: pre-wrap;
+  color: #555555;
+  background-color: #f0f0f0;
+  border-color: #555555;
+}
+.example-card pre {
+  background-color: #6365f1;
+  border-radius: 0.5rem;
+  color: white;
+  font-size: 0.98rem;
+  line-height: 1.25rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  white-space: pre-wrap;
+}
+.example-card pre strong {
+  color: white;
+  font-size: 1rem;
+}
